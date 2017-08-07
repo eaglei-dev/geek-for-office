@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Geeks-For-Office",
+	"version": "0.1",
+	"description": "Use GeeksforGeeks at your workplace !",
+	"author": "eaglei-dev",
+	"content_scripts": [{
+		"matches": ["*://*.geeksforgeeks.org/*"],
+		"js": ["jquery-3.2.1.min.js","geeks-script.js"]
+	}],
+  "browser_action": {
+  "default_icon": "icon.png"
+}
+}
